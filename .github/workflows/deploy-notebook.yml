@@ -20,7 +20,7 @@ jobs:
       run: |
         ORIGIN_HOST=${{ secrets.DATABRICKS_ORIGIN_HOST }}
         ORIGIN_TOKEN=${{ secrets.DATABRICKS_ORIGIN_TOKEN }}
-        NOTEBOOK_BASE="/Workspace/Users/jeremypalma2022@gmail.com/Databricks_GitHub/proceso"
+        NOTEBOOK_BASE="/Workspace/Users/jeremypalma2022@gmail.com/Proyect_Databricks_GitHub/process
         NOTEBOOKS=("Ingest_supercias_compania" "Ingest_supercias_ranking" "Ingest_supercias_sector" "Ingest_supercias_segmento" "Load_supercias" "Transform_supercias")  # Agrega más según necesitesas
 
         mkdir -p notebooks_to_deploy
@@ -37,7 +37,7 @@ jobs:
       run: |
         DEST_HOST=${{ secrets.DATABRICKS_DEST_HOST }}
         DEST_TOKEN=${{ secrets.DATABRICKS_DEST_TOKEN }}
-        DEST_BASE="/py"
+        DEST_BASE="/prod"
 
         for file in notebooks_to_deploy/*.py; do
           name=$(basename "$file" .py)
