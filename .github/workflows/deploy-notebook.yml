@@ -26,6 +26,7 @@ jobs:
           "process/Load_supercias"
           "process/Transform_supercias"
           "scripts/Preparacion_Ambiente"
+          "security/grants"
         )  # Agrega más rutas según necesites
         mkdir -p notebooks_to_deploy
         for nb_path in "${NOTEBOOK_PATHS[@]}"; do
@@ -41,7 +42,7 @@ jobs:
       run: |
         DEST_HOST=${{ secrets.DATABRICKS_DEST_HOST }}
         DEST_TOKEN=${{ secrets.DATABRICKS_DEST_TOKEN }}
-        DEST_BASE="/pro/scripts/main"
+        DEST_BASE="/prod/scripts/main"
         for file in notebooks_to_deploy/*.py; do
           name=$(basename "$file" .py)
           dest_path="$DEST_BASE/$name"
@@ -271,7 +272,7 @@ jobs:
                 }
               ]
             },
-                        {
+            {
               "task_key": "Load_supercias",
               "description": "Ejecuta notebook Load_supercias",
               "notebook_task": {
@@ -291,6 +292,26 @@ jobs:
               "depends_on": [
                 {
                   "task_key": "Transform_supercias"
+                }
+              ]
+            },
+            {
+              "task_key": "Grants",
+              "description": "Ejecuta notebook Grants",
+              "notebook_task": {
+                "notebook_path": "/prod/scripts/main/grants",
+                "source": "WORKSPACE",
+                "base_parameters": {
+                  "catalogName": "unit_catalog_explorer",
+                  "groupName": "ext_users"
+                }
+              },
+              "existing_cluster_id": "$CLUSTER_ID",
+              "timeout_seconds": 3600,
+              "max_retries": 2,
+              "depends_on": [
+                {
+                  "task_key": "Load_supercias"
                 }
               ]
             }
