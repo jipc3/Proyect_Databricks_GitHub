@@ -27,7 +27,7 @@ jobs:
           "process/Transform_supercias"
           "scripts/Preparacion_Ambiente"
           "security/grants"
-        )  # Agrega más rutas según necesites
+        )  # Agrega más rutas según se requiera
         mkdir -p notebooks_to_deploy
         for nb_path in "${NOTEBOOK_PATHS[@]}"; do
           nb=$(basename "$nb_path")
