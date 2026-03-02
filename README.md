@@ -168,7 +168,7 @@ Proyect_Databricks_GitHub/
 | ![PySpark](https://img.shields.io/badge/PySpark-E25A1C?style=flat-square&logo=apache-spark&logoColor=white) | Framework de transformación de datos |
 | ![ADLS](https://img.shields.io/badge/ADLS_Gen2-0078D4?style=flat-square&logo=microsoft-azure&logoColor=white) | Data Lake para almacenamiento persistente |
 | ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white) | Automatización del despliegue CI/CD |
-| ![Databricks Dashboards](https://img.shields.io/badge/Databricks Dashboards-F2C81?style=for-the-badge&logo=databricks&logoColor=black) |  Visualización |
+| ![Databricks Dashboards](https://img.shields.io/badge/Databricks_Dashboards-F2C81?style=for-the-badge&logo=databricks&logoColor=black) |  Visualización |
 
 
 ---
@@ -203,7 +203,8 @@ Proyect_Databricks_GitHub/
 4. Ejecutar `process/Load_supercias.ipynb`.
 5. Validar resultados en dashboard y/o tablas finales.
 
-![](/Workspace/Users/jeremypalma2022@gmail.com/Proyect_Databricks_GitHub/evidence/ETL - DEV TAKS.png)
+![Texto descriptivo](evidence/ETL - DEV TAKS.png)
+
 
 ---
 
@@ -224,7 +225,7 @@ Este workflow automatiza el despliegue de notebooks para mantener sincronizado e
 └── Monitorear y notificar resultados
 ```
 
-![](/Workspace/Users/jeremypalma2022@gmail.com/Proyect_Databricks_GitHub/evidence/ETL - PROD JOB RUN.png)
+![Texto descriptivo](evidence/ETL - PROD JOB RUN.png)
 
 Trigger 
 ```
@@ -238,7 +239,9 @@ Trigger
 
 ## 📈 Dashboards
 
-https://github.com/jipc3/Proyect_Databricks_GitHub/blob/7b9b9a7ca0fc2e3358a4b2f5cff34576fa326140/dashboard/DASHBOARD.png
+![Texto descriptivo](dashboard/DASHBOARD.png)
+
+---
 
 ## 🔍 Monitoreo
 
