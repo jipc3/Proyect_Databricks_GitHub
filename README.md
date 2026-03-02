@@ -203,7 +203,7 @@ Proyect_Databricks_GitHub/
 4. Ejecutar `process/Load_supercias.ipynb`.
 5. Validar resultados en dashboard y/o tablas finales.
 
-![Texto descriptivo](evidence/ETL - DEV TAKS.png)
+![Texto descriptivo](evidence/ETL-DEV_TAKS.png)
 
 
 ---
@@ -225,7 +225,7 @@ Este workflow automatiza el despliegue de notebooks para mantener sincronizado e
 └── Monitorear y notificar resultados
 ```
 
-![Texto descriptivo](evidence/ETL - PROD JOB RUN.png)
+![Texto descriptivo](evidence/ETL-PROD_JOB_RUN.png)
 
 Trigger 
 ```
