@@ -19,7 +19,7 @@
 
 Pipeline ETL *enterprise-grade* con Arquitectura Medallion (**Bronze → Silver → Gold**) en Azure Databricks implementando CI/CD completo y Delta Lake para garantizar consistencia ACID. 
 
-Desarrollado por **Jeremy Palma** y tomando como fuente de datos los recursos publicados por la Superintendencia de Compañías, Valores y Seguros, **SUPERCIAS**. 
+Desarrollado a partir de los recursos publicados por la Superintendencia de Compañías, Valores y Seguros, **SUPERCIAS**. 
 
 Todos los insights generados consideran la información de los **Estados Financieros** presentados bajo el estado de **compañías activas**. El análisis de estos datos permite tener una visión de la salud de las empresas/sectores económicos del Ecuador.
 
