@@ -275,7 +275,7 @@ Proyecto orientado a ingeniería de datos con enfoque en automatización ETL y a
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jeremy-palma-carbo/)
 
 
-**Data Analysts** | **Ing. Industrial** | **Azure Databricks** | **Delta Lake** | **CI/CD**
+**Data Engineer & Analyst** | **Azure Databricks & Power BI** | **Ingeniero Industrial**
 
 ---
 
